@@ -41,7 +41,7 @@
 		      	<form action="" method="POST">
 		      		@csrf
 		      		@method('DELETE')
-		      		<a href=""><button type="button" class="btn btn-secondary">Ver</button></a>
+		      		<a href="{{ url('grupos/ficha', $grupo->id) }}"><button type="button" class="btn btn-secondary">Ver</button></a>
 		      		<a href=""><button type="button" class="btn btn-primary">Editar</button></a>
 		      		<button type="submit" class="btn btn-danger">Eliminar</button>
 		      	</form> 

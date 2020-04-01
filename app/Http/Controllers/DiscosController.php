@@ -18,7 +18,7 @@ class DiscosController extends Controller
             $query = trim($request->get('search'));
             $discos = Disco::where('nombre', 'LIKE', '%' . $query . '%')
                     ->orderBy('id', 'asc')
-                    ->paginate(10);
+                    ->paginate(5);
                     //->simplePaginate(5);
 
             return view('discos.index', ['discos' => $discos, 'search' => $query]);

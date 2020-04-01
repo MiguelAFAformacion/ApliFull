@@ -26,6 +26,6 @@ Route::get('/notas/archivadas', 'NotasController@archivadas');
 
 //Rutas para la sección de Discografía
 Route::get('grupos/index', 'GruposController@index')->middleware('auth');
-Route::get('grupos/ficha', 'GruposController@ficha')->middleware('auth');
+Route::get('grupos/ficha/{id}', 'GruposController@ficha')->middleware('auth');
 
 Route::get('discos/index', 'DiscosController@index')->middleware('auth');
