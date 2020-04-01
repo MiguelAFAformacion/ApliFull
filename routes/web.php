@@ -23,3 +23,6 @@ Route::resource('usuarios', 'UserController')->middleware('auth');
 Route::resource('/notas/todas', 'NotasController');
 Route::get('/notas/favoritas', 'NotasController@favoritas');
 Route::get('/notas/archivadas', 'NotasController@archivadas');
+
+//Rutas para la sección de Discografía
+Route::get('grupos/index', 'GruposController@index')->middleware('auth');

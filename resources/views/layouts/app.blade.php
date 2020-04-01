@@ -156,7 +156,7 @@
                 <a href="{{ url('/') }}" class="brand-link">
                     <img src="{{ asset('dist/img/logo_afa.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                         style="opacity: .8">
-                    <span class="brand-text font-weight-light">System Team</span>
+                    <span class="brand-text font-weight-light">AFA Formación</span>
                 </a>
 
                 <!-- Sidebar -->
@@ -210,7 +210,8 @@
                                     </p>
                                 </a>
                             </li>
-
+                            
+                            {{-- Notas --}}
                             <li class="nav-item has-treeview">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon far fa-sticky-note"></i>
@@ -236,6 +237,30 @@
                                             class="{{ Request::path() === 'notas/archivadas' ? 'nav-link active' : 'nav-link' }}">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Archivadas</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            {{-- Discografía --}}
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon far fa-sticky-note"></i>
+                                    <p>Discografía<i class="fas fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{ url('grupos/index') }}"
+                                            class="{{ Request::path() === 'grupos/index' ? 'nav-link active' : 'nav-link' }}">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Grupos</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ url('YYY/YYY') }}"
+                                            class="{{ Request::path() === 'YYY/YYY' ? 'nav-link active' : 'nav-link' }}">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Discos</p>
                                         </a>
                                     </li>
                                 </ul>
