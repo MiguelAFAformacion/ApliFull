@@ -257,8 +257,8 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('YYY/YYY') }}"
-                                            class="{{ Request::path() === 'YYY/YYY' ? 'nav-link active' : 'nav-link' }}">
+                                        <a href="{{ url('discos/index') }}"
+                                            class="{{ Request::path() === 'discos/index' ? 'nav-link active' : 'nav-link' }}">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Discos</p>
                                         </a>
